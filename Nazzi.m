@@ -13,6 +13,13 @@
 
 @implementation ADContentController
 
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+    self.view.frame = [UIScreen mainScreen].bounds;
+}
+
 - (UINavigationController *)navigationController
 {
     if ([self.parentViewController isKindOfClass:[UINavigationController class]]) {
@@ -69,11 +76,13 @@
         return;
     }
     
-    if (self.childViewControllers.count == 0) {
-        self.navigationBar.hidden = YES;
-    }
+    self.navigationBar.hidden = YES;
     
     UIViewController *content = [ADContentController new];
+    
+    content.title = vc.title;
+    content.tabBarItem = vc.tabBarItem;
+    
     UINavigationController *realNavi = [[ADRealNavigationController alloc] initWithRootViewController:vc];
     
     [content.view addSubview:realNavi.view];
