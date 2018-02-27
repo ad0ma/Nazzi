@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E445695203EBAF80081052E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E445694203EBAF80081052E /* AppDelegate.m */; };
+		5E445698203EBAF80081052E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E445697203EBAF80081052E /* ViewController.m */; };
+		5E44569B203EBAF80081052E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E445699203EBAF80081052E /* Main.storyboard */; };
+		5E44569D203EBAF80081052E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E44569C203EBAF80081052E /* Assets.xcassets */; };
+		5E4456A0203EBAF80081052E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E44569E203EBAF80081052E /* LaunchScreen.storyboard */; };
+		5E4456A3203EBAF80081052E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4456A2203EBAF80081052E /* main.m */; };
+		5E4456AB203EBB100081052E /* Nazzi.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4456A9203EBB100081052E /* Nazzi.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E445690203EBAF70081052E /* NazziTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NazziTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E445693203EBAF80081052E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E445694203EBAF80081052E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E445696203EBAF80081052E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E445697203EBAF80081052E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E44569A203EBAF80081052E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E44569C203EBAF80081052E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E44569F203EBAF80081052E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E4456A1203EBAF80081052E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E4456A2203EBAF80081052E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E4456A9203EBB100081052E /* Nazzi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Nazzi.m; path = ../../Nazzi.m; sourceTree = "<group>"; };
+		5E4456AA203EBB100081052E /* Nazzi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Nazzi.h; path = ../../Nazzi.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E44568D203EBAF70081052E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E445687203EBAF70081052E = {
+			isa = PBXGroup;
+			children = (
+				5E445692203EBAF70081052E /* NazziTest */,
+				5E445691203EBAF70081052E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E445691203EBAF70081052E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E445690203EBAF70081052E /* NazziTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E445692203EBAF70081052E /* NazziTest */ = {
+			isa = PBXGroup;
+			children = (
+				5E4456AA203EBB100081052E /* Nazzi.h */,
+				5E4456A9203EBB100081052E /* Nazzi.m */,
+				5E445693203EBAF80081052E /* AppDelegate.h */,
+				5E445694203EBAF80081052E /* AppDelegate.m */,
+				5E445696203EBAF80081052E /* ViewController.h */,
+				5E445697203EBAF80081052E /* ViewController.m */,
+				5E445699203EBAF80081052E /* Main.storyboard */,
+				5E44569C203EBAF80081052E /* Assets.xcassets */,
+				5E44569E203EBAF80081052E /* LaunchScreen.storyboard */,
+				5E4456A1203EBAF80081052E /* Info.plist */,
+				5E4456A2203EBAF80081052E /* main.m */,
+			);
+			path = NazziTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E44568F203EBAF70081052E /* NazziTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4456A6203EBAF80081052E /* Build configuration list for PBXNativeTarget "NazziTest" */;
+			buildPhases = (
+				5E44568C203EBAF70081052E /* Sources */,
+				5E44568D203EBAF70081052E /* Frameworks */,
+				5E44568E203EBAF70081052E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NazziTest;
+			productName = NazziTest;
+			productReference = 5E445690203EBAF70081052E /* NazziTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E445688203EBAF70081052E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Adoma;
+				TargetAttributes = {
+					5E44568F203EBAF70081052E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5E44568B203EBAF70081052E /* Build configuration list for PBXProject "NazziTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E445687203EBAF70081052E;
+			productRefGroup = 5E445691203EBAF70081052E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E44568F203EBAF70081052E /* NazziTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E44568E203EBAF70081052E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4456A0203EBAF80081052E /* LaunchScreen.storyboard in Resources */,
+				5E44569D203EBAF80081052E /* Assets.xcassets in Resources */,
+				5E44569B203EBAF80081052E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E44568C203EBAF70081052E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E445698203EBAF80081052E /* ViewController.m in Sources */,
+				5E4456A3203EBAF80081052E /* main.m in Sources */,
+				5E4456AB203EBB100081052E /* Nazzi.m in Sources */,
+				5E445695203EBAF80081052E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E445699203EBAF80081052E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E44569A203EBAF80081052E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E44569E203EBAF80081052E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E44569F203EBAF80081052E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E4456A4203EBAF80081052E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E4456A5203EBAF80081052E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E4456A7203EBAF80081052E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NazziTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adoma.NazziTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E4456A8203EBAF80081052E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NazziTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adoma.NazziTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E44568B203EBAF70081052E /* Build configuration list for PBXProject "NazziTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4456A4203EBAF80081052E /* Debug */,
+				5E4456A5203EBAF80081052E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4456A6203EBAF80081052E /* Build configuration list for PBXNativeTarget "NazziTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4456A7203EBAF80081052E /* Debug */,
+				5E4456A8203EBAF80081052E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E445688203EBAF70081052E /* Project object */;
+}

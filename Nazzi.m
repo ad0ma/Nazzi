@@ -11,6 +11,24 @@
 @interface ADContentController: UIViewController
 @end
 
+@interface ADRealNavigationController: UINavigationController
+@end
+
+OS_ALWAYS_INLINE ADContentController *__packViewController(UIViewController *vc) {
+    
+    ADContentController *content = [ADContentController new];
+    
+    content.title = vc.title;
+    content.tabBarItem = vc.tabBarItem;
+    
+    UINavigationController *realNavi = [[ADRealNavigationController alloc] initWithRootViewController:vc];
+    
+    [content.view addSubview:realNavi.view];
+    [content addChildViewController:realNavi];
+    
+    return content;
+}
+
 @implementation ADContentController
 
 - (void)viewDidLayoutSubviews
@@ -28,9 +46,6 @@
     return [super navigationController];
 }
 
-@end
-
-@interface ADRealNavigationController: UINavigationController
 @end
 
 @implementation ADRealNavigationController
@@ -67,6 +82,19 @@
     Method excPush = class_getInstanceMethod([UINavigationController class], @selector(ad_pushViewController:animated:));
     
     method_exchangeImplementations(oriPush, excPush);
+    
+    Method oriInitWithCoder = class_getInstanceMethod([UINavigationController class], @selector(initWithCoder:));
+    Method excInitWithCoder = class_getInstanceMethod([UINavigationController class], @selector(ad_initWithCoder:));
+    
+    method_exchangeImplementations(oriInitWithCoder, excInitWithCoder);
+}
+
+- (instancetype)ad_initWithCoder:(NSCoder *)aDecoder
+{
+    UINavigationController *ori = [self ad_initWithCoder:aDecoder];
+    ori.viewControllers = @[__packViewController(ori.topViewController)];
+    ori.navigationBar.hidden = YES;
+    return ori;
 }
 
 - (void)ad_pushViewController:(UIViewController *)vc animated:(BOOL)animated
@@ -77,18 +105,7 @@
     }
     
     self.navigationBar.hidden = YES;
-    
-    UIViewController *content = [ADContentController new];
-    
-    content.title = vc.title;
-    content.tabBarItem = vc.tabBarItem;
-    
-    UINavigationController *realNavi = [[ADRealNavigationController alloc] initWithRootViewController:vc];
-    
-    [content.view addSubview:realNavi.view];
-    [content addChildViewController:realNavi];
-    
-    [self ad_pushViewController:content animated:animated];
+    [self ad_pushViewController:__packViewController(vc) animated:animated];
 }
 
 @end
